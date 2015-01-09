@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		title if else switch
+	body
+		
+		//if 判断语句
+		-var name = "jade"
+		
+		if name == "jade"
+			p hello#{name}
+		else if name == "java"
+			p hello#{name}
+		else 
+			p hello#{name}
+
+		//case 和 switch case 语法一样
+		-var type = 4;
+		case type
+			when 1
+				p 1 choosed	
+			when 2
+				p 2 choosed
+			when 3 : p 3 choosed
+			default : p nothing choosed
+
+				

@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(name='charset',content='utf-8')
+		meta(name='viewport',content='width=device-width')
+		//title #{course.toUpperCase()} studys
+		- var htmlData = "<script>alert(2);</script>";
+		- var str = "test";
+	body
+
+		div#wrap
+
+			h1 对象遍历
+			- var person = {name:"yangfei",age:"22"}
+
+			for (var v in person)
+				p #{person[v]}
+
+		    each value,key in person
+				p #{key} - #{value}
+
+			h1 数组遍历
+
+			- var arr = ['imooc','node','express']
+
+			each item in arr
+				p #{item}
+
+			h1 嵌套循环
+			
+			- var sections = [{"id":1,items:["a","b","c"]},{"id":2,items:["d","e","f"]}];
+
+			dl
+				each section in sections
+					dt #{section.id}
+					each it in secion.items
+						dd #{it}	
+
+			
+			
+
+
+
+
