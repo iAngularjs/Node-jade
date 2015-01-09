@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		meta(name='charset',content='utf-8')
+		meta(name='viewport',content='width=device-width')
+		//title #{course.toUpperCase()} studys
+		- var htmlData = "<script>alert(2);</script>";
+	body
+
+		div#wrap
+			input(type="checkbox" value="hello world" checked)
+			//转义
+			p #{htmlData}
+			//非转义
+			p !{htmlData}
+
+
